@@ -53,6 +53,12 @@ export const techCardsItems = [
     imageUrl: "/imgs/logos/mongodb.svg",
     bgColor: "bg-[#599636]/30",
   },
+  {
+    name: "Prisma",
+    description: "ORM",
+    imageUrl: "/imgs/logos/prisma.svg",
+    bgColor: "bg-[#0C344B]/20",
+  },
 ];
 
 export const portfolioProjects = [
