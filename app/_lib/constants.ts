@@ -59,6 +59,12 @@ export const techCardsItems = [
     imageUrl: "/imgs/logos/prisma.svg",
     bgColor: "bg-[#0C344B]/20",
   },
+  {
+    name: "PostgreSQL",
+    description: "OR database system",
+    imageUrl: "/imgs/logos/postgresql.svg",
+    bgColor: "bg-[#336791]/20",
+  },
 ];
 
 export const portfolioProjects = [
