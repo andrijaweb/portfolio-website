@@ -45,7 +45,13 @@ export const techCardsItems = [
     name: "NodeJS",
     description: "Backend",
     imageUrl: "/imgs/logos/node-js.svg",
-    bgColor: "bg-[#689f63]/20",
+    bgColor: "bg-[#689F63]/30",
+  },
+  {
+    name: "MongoDB",
+    description: "NoSQL database",
+    imageUrl: "/imgs/logos/mongodb.svg",
+    bgColor: "bg-[#599636]/30",
   },
 ];
 
