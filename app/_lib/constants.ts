@@ -42,10 +42,10 @@ export const techCardsItems = [
     bgColor: "bg-[#3ECF8E]/20",
   },
   {
-    name: "Appwrite",
-    description: "Backend tool",
-    imageUrl: "/imgs/logos/appwrite.svg",
-    bgColor: "bg-[#F02D65]/20",
+    name: "NodeJS",
+    description: "Backend",
+    imageUrl: "/imgs/logos/node-js.svg",
+    bgColor: "bg-[#689f63]/20",
   },
 ];
 
