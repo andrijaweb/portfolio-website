@@ -87,6 +87,25 @@ export const portfolioProjects = [
     sourceCodeUrl: "https://github.com/andrijaweb/ecommerce-app",
   },
   {
+    id: "exptracker",
+    heading: "ExpenseTracker",
+    subheading: "application for tracking your incomes and expenses.",
+    description:
+      "Track your incomes and expenses in an easy way. Clear chart overviews will improve your organization. The application is developed with react + typescript for frontend part, and nodejs with mongodb.",
+    imageUrl: "/imgs/projects/portfolio-mockup4.png",
+    techStack: [
+      "TypeScript",
+      "React",
+      "NodeJS",
+      "MongoDB",
+      "ExpressJS",
+      "TailwindCSS",
+      "shadcn/ui",
+    ],
+    liveDemoUrl: "https://expense-tracker-app-eq85.onrender.com/",
+    sourceCodeUrl: "https://github.com/andrijaweb",
+  },
+  {
     id: "socialsphere",
     heading: "SocialSphere",
     subheading: "connect with your friends online",
