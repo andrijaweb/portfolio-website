@@ -3,6 +3,8 @@ import { BackgroundBeams } from "./ui/BackgroundBeams";
 import ShinyButton from "./ui/ShinyButton";
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <div
       className="flex flex-col justify-center antialiased relative border border-dark-300 rounded-xl mb-5"
@@ -32,7 +34,7 @@ const Footer = () => {
               Andrija Djordjevic
             </h3>
             <p className="text-dark-200/70 dark:text-stone-200/70 relative z-10">
-              &copy; 2024 | All rights reserved.
+              &copy; {currentYear} | All rights reserved.
             </p>
           </div>
 
