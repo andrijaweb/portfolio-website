@@ -1,3 +1,5 @@
+import { m } from "framer-motion";
+
 export const techCardsItems = [
   {
     name: "Figma",
@@ -205,5 +207,35 @@ export const testimonialItems = [
     description:
       "“I got on board Andrija from Upwork to help me develop a website for my course on blockchain, cryptocurrency, and investment techniques. Because of his effort, I was able to generate considerable sales from my course after launching it, and I have received good reviews about the design and functionality of the website. Andrija is someone I would highly recommend!”",
     image: "/imgs/avatars/bogdan.svg",
+  },
+];
+
+export const mainNavigationLinks = [
+  {
+    url: "/",
+    label: "Home",
+  },
+  {
+    url: "#work",
+    label: "Work",
+  },
+  {
+    url: "#about",
+    label: "About",
+  },
+  {
+    url: "#contact",
+    label: "Contact",
+  },
+];
+
+export const socialLinks = [
+  {
+    url: "https://www.linkedin.com/in/andrija-djordjevic-a7b794282/",
+    label: "LinkedIn",
+  },
+  {
+    url: "https://github.com/andrijaweb",
+    label: "Github",
   },
 ];

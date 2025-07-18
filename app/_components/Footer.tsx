@@ -1,6 +1,11 @@
 import Link from "next/link";
 import { BackgroundBeams } from "./ui/BackgroundBeams";
 import ShinyButton from "./ui/ShinyButton";
+import {
+  mainNavigationLinks,
+  portfolioProjects,
+  socialLinks,
+} from "../_lib/constants";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -41,69 +46,40 @@ const Footer = () => {
           <div className="flex justify-between gap-0 sm:gap-16">
             <ul className="space-y-2.5 relative z-10 text-sm sm:text-base">
               <li className="text-base sm:text-lg font-semibold">Navigate</li>
-              <li className="text-dark-200/60 hover:text-dark-200 dark:text-white/50 dark:hover:text-white">
-                <Link href="/">Home</Link>
-              </li>
-              <li className="text-dark-200/60 hover:text-dark-200 dark:text-white/50 dark:hover:text-white">
-                <Link href="#work">Work</Link>
-              </li>
-              <li className="text-dark-200/60 hover:text-dark-200 dark:text-white/50 dark:hover:text-white">
-                <Link href="#about">About</Link>
-              </li>
-              <li className="text-dark-200/60 hover:text-dark-200 dark:text-white/50 dark:hover:text-white">
-                <Link href="#contact">Contact</Link>
-              </li>
+              {mainNavigationLinks.map((link) => (
+                <li
+                  key={link.label}
+                  className="text-dark-200/60 hover:text-dark-200 dark:text-white/50 dark:hover:text-white"
+                >
+                  <Link href={link.url}>{link.label}</Link>
+                </li>
+              ))}
             </ul>
 
             <ul className="space-y-2.5 relative z-10 text-sm sm:text-base">
               <li className="text-lg font-semibold">Projects</li>
-              <li className="text-dark-200/60 hover:text-dark-200 dark:text-white/50 dark:hover:text-white">
-                <Link
-                  href="https://github.com/andrijaweb/ecommerce-app"
-                  target="_blank"
+              {portfolioProjects.map((project) => (
+                <li
+                  key={project.id}
+                  className="text-dark-200/60 hover:text-dark-200 dark:text-white/50 dark:hover:text-white"
                 >
-                  Shoptidy
-                </Link>
-              </li>
-              <li className="text-dark-200/60 hover:text-dark-200 dark:text-white/50 dark:hover:text-white">
-                <Link
-                  href="https://github.com/andrijaweb/socialmedia-reactapp"
-                  target="_blank"
-                >
-                  SocialSphere
-                </Link>
-              </li>
-              <li className="text-dark-200/60 hover:text-dark-200 dark:text-white/50 dark:hover:text-white">
-                <Link
-                  href="https://github.com/andrijaweb/nextCut-app"
-                  target="_blank"
-                >
-                  NextCut
-                </Link>
-              </li>
-              <li className="text-dark-200/60 hover:text-dark-200 dark:text-white/50 dark:hover:text-white">
-                <Link href="/">NextFood</Link>
-              </li>
+                  <Link href={`/work/${project.id}`}>{project.heading}</Link>
+                </li>
+              ))}
             </ul>
 
             <ul className="space-y-2.5 relative z-10 text-sm sm:text-base">
               <li className="text-lg font-semibold">Socials</li>
-              <li className="text-dark-200/60 hover:text-dark-200 dark:text-white/50 dark:hover:text-white">
-                <Link
-                  href="https://www.linkedin.com/in/andrija-djordjevic-a7b794282/"
-                  target="_blank"
+              {socialLinks.map((link) => (
+                <li
+                  key={link.label}
+                  className="text-dark-200/60 hover:text-dark-200 dark:text-white/50 dark:hover:text-white"
                 >
-                  LinkedIn
-                </Link>
-              </li>
-              <li className="text-dark-200/60 hover:text-dark-200 dark:text-white/50 dark:hover:text-white">
-                <Link href="https://github.com/andrijaweb" target="_blank">
-                  Github
-                </Link>
-              </li>
-              <li className="text-dark-200/60 hover:text-dark-200 dark:text-white/50 dark:hover:text-white">
-                <Link href="/">Instagram</Link>
-              </li>
+                  <Link href={link.url} target="_blank">
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
